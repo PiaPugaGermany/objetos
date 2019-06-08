@@ -1,10 +1,11 @@
-# Copia el siguiente código y ejecútalo. Luego corrige los errores para poder imprimir el nombre de la
-# tienda.
+# Copia el siguiente código y ejecútalo. Luego corrige los errores para poder imprimir el nombre de la tienda.
 
 class Store
-def initialize(name)
-name = @name
+  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
 end
-end
-store = store.new('Tienda 1')
+
+store = Store.new('Tienda 1')
 puts store.name
